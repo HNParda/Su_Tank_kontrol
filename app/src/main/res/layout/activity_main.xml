@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?colorTertiary"
+        android:layout_gravity="top"
+        android:title="@string/app_name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/progressText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="0"
+            android:textColor="@color/water"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <de.hnparda.tankcontrol.utils.TankProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="125dp"
+            android:layout_height="450dp"
+            android:layout_gravity="center" />
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/Theme.SuTankKontrol.Button"
+            android:layout_width="200dp"
+            android:layout_height="80dp"
+            android:layout_marginTop="80dp"
+            android:onClick="switchPump"
+            android:text="@string/startPump"
+            android:paddingTop="3dp"
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</FrameLayout>

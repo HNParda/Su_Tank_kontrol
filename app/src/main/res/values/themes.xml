@@ -1,0 +1,25 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.SuTankKontrol" parent="Theme.Material3.Dark.NoActionBar" />
+
+    <style name="Theme.SuTankKontrol" parent="Base.Theme.SuTankKontrol">
+        <item name="colorPrimary">@color/purple</item>
+        <item name="colorSecondary">@color/purple</item>
+        <item name="colorTertiary">@color/gray</item>
+    </style>
+
+    <style name="Theme.SuTankKontrol.BigButton" parent="Theme.SuTankKontrol.Button">
+        <item name="android:maxHeight">55dp</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Theme.SuTankKontrol.Button" parent="Widget.Material3.Button">
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:textSize">11sp</item>
+    </style>
+
+
+</resources>
